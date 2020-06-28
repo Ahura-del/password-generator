@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    background: #111;
+}
+
+::selection {
+    background: #666;
+    color: #ccc;
+}
+
+ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.container {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.container .display h2 {
+    font: 30px/36px 'Signika', sans-serif;
+    font-weight: 600;
+    color: rgb(169, 169, 169);
+}
+
+.container .display .input-field {
+    margin-top: 1rem;
+}
+
+.display #btn {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    outline: none;
+    background: #444;
+    color: #ccc;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.display #btn:hover {
+    background: #333;
+    color: rgb(220, 220, 220);
+}
+
+.display .input-field {
+    display: flex;
+    position: relative;
+}
+
+.display .input-field #pass-field {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #333;
+    color: #e1e1e1;
+    text-align: center;
+    border-radius: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+.display .input-field .far {
+    position: absolute;
+    top: 10px;
+    right: 7px;
+    color: rgb(221, 221, 221);
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.social-icon ul li a i {
+    color: #ccc;
+    background: transparent;
+}
+
+.social-icon ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
